@@ -1,5 +1,6 @@
 
 import React from 'react';
+import  hero from '../assets/hero.png';
 
 const Hero = () => {
   return (
@@ -7,9 +8,9 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="./assets/hero.png" 
+          src={hero}
           alt="DJ Deck Concert" 
-          className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700 scale-105"
+          className="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all duration-700 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
       </div>
