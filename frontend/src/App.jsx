@@ -1,7 +1,7 @@
 import React from 'react' 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-
+import Stats from './components/Stats'
 import Partners from './components/Partners'
 import Artists from './components/Artists.jsx'
 import Events from './components/Events'
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        
+        <Stats />
         <Partners />
         <Artists />
         <Events />

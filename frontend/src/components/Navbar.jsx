@@ -1,13 +1,24 @@
 
 import React from 'react';
+import logoImage from '../assets/logo.png';
 
-const Navbar = () => {
+// To use your local logo from the assets folder, uncomment the line below:
+// import logoImage from '../assets/logo.png';
+
+const Navbar= () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-white flex items-center justify-center font-black text-black text-xl">SL</div>
-          <span className="font-bold tracking-tighter text-xl">UNDERGROUND</span>
+      <div className="max-w-7xl mx-auto px-6 h-15 flex items-center justify-between">
+        <div className="flex items-center">
+          {/* 
+            Replace the 'src' below with {logoImage} once you have imported your local file.
+            The h-10 class keeps the logo at a consistent height within the navbar.
+          */}
+          <img 
+            src={logoImage}
+            alt="SL Underground Logo" 
+            className="h-10 w-auto object-contain hover:opacity-80 transition-opacity cursor-pointer"
+          />
         </div>
         
         <div className="hidden md:flex items-center space-x-10 text-sm font-medium text-white/60">

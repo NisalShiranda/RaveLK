@@ -26,7 +26,8 @@ const Hero = () => {
           
           <div className="max-w-xs text-sm text-white/50 leading-relaxed font-light">
             <p>
-              NAMU IS A DYNAMIC AND CUTTING-EDGE RECORD LABEL DEDICATED TO DISCOVERING AND PROMOTING THE MOST EXCITING NEW ELECTRONIC MUSIC ARTISTS FROM AROUND THE WORLD. 
+              RAVELK is more than a platform, it’s a movement for Sri Lanka’s electronic music scene. A place where underground sounds rise, where DJs and producers connect, and where creativity and rhythm collide to shape the next wave of EDM culture.
+              
             </p>
           </div>
         </div>
