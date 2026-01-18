@@ -1,11 +1,15 @@
 
 import React from 'react';
+import e1 from '../assets/e1.png';
+import e2 from '../assets/e2.png';
+import e3 from '../assets/e3.png';
+import e4 from '../assets/e4.png';
 
 const events = [
-  { id: 1, title: 'EQUINOX', date: 'DEC 12', location: 'LOT 14, COLOMBO', image: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&q=80&w=800' },
-  { id: 2, title: 'FORMA PROJECT', date: 'DEC 28', location: 'MIRISSA BEACH', image: 'https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, title: 'DEEP NIGHTS', date: 'JAN 05', location: 'LEVEL 4, COLOMBO', image: 'https://images.unsplash.com/photo-1514525253344-a812ef9ee27f?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, title: 'MONZA RAVE', date: 'JAN 20', location: 'WAREHOUSE 02', image: 'https://images.unsplash.com/photo-1429962714451-bb934ecbb4ec?auto=format&fit=crop&q=80&w=800' },
+  { id: 1, title: 'EQUINOX', date: 'DEC 12', location: 'LOT 14, COLOMBO', image: e1 },
+  { id: 2, title: 'FORMA PROJECT', date: 'DEC 28', location: 'MIRISSA BEACH', image: e2 },
+  { id: 3, title: 'DEEP NIGHTS', date: 'JAN 05', location: 'LEVEL 4, COLOMBO', image: e3 },
+  { id: 4, title: 'MONZA RAVE', date: 'JAN 20', location: 'WAREHOUSE 02', image: e4 },
 ];
 
 const Events= () => {
