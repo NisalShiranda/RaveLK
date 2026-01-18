@@ -6,10 +6,10 @@ import e3 from '../assets/e3.png';
 import e4 from '../assets/e4.png';
 
 const events = [
-  { id: 1, title: 'EQUINOX', date: 'DEC 12', location: 'LOT 14, COLOMBO', image: e1 },
-  { id: 2, title: 'FORMA PROJECT', date: 'DEC 28', location: 'MIRISSA BEACH', image: e2 },
-  { id: 3, title: 'DEEP NIGHTS', date: 'JAN 05', location: 'LEVEL 4, COLOMBO', image: e3 },
-  { id: 4, title: 'MONZA RAVE', date: 'JAN 20', location: 'WAREHOUSE 02', image: e4 },
+  { id: 1, title: 'MORZA', date: 'DEC 12', location: 'LOT 14, COLOMBO', image: e1 },
+  { id: 2, title: 'AQUALIC', date: 'DEC 28', location: 'MIRISSA BEACH', image: e2 },
+  { id: 3, title: 'FLYING DUST', date: 'JAN 05', location: 'LEVEL 4, COLOMBO', image: e3 },
+  { id: 4, title: 'FROM DUSK', date: 'JAN 20', location: 'WAREHOUSE 02', image: e4 },
 ];
 
 const Events= () => {
