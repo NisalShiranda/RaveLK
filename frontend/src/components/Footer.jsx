@@ -1,5 +1,6 @@
 
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -8,8 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-8 mb-32">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-8">
-              <div className="w-8 h-8 bg-white flex items-center justify-center font-black text-black text-xl">SL</div>
-              <span className="font-bold tracking-tighter text-2xl">UNDERGROUND</span>
+              <div><img src={logo}></img></div>
             </div>
             <p className="text-white/40 max-w-md leading-relaxed mb-10">
               Defining the future of electronic music in South Asia. We empower artists to push boundaries and create sonic experiences that resonate globally.
@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-bold mb-8 uppercase tracking-widest">Contact</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              <li>General: hello@slunderground.com</li>
-              <li>Demos: demos@slunderground.com</li>
-              <li>Booking: bookings@slunderground.com</li>
-              <li>Press: press@slunderground.com</li>
+              <li>General: hello@ravelk.com</li>
+              <li>Demos: demos@ravelk.com</li>
+              <li>Booking: bookings@ravelk.com</li>
+              <li>Press: press@ravelk.com</li>
             </ul>
           </div>
         </div>
