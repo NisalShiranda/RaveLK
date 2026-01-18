@@ -3,7 +3,9 @@ import React from 'react';
 
 const ArtistProfile = () => {
   return (
-    <div className="bg-black text-white font-['Inter']">
+    /* මෙතන තියෙන id එක Navbar එකේ href එකට සමාන විය යුතුයි. 
+       scroll-mt-20 දාන්නේ navbar එකට යට වෙන්නේ නැතිව ලස්සනට පේන්න. */
+    <div id="artist-profile" className="bg-black text-white font-['Inter'] scroll-mt-20">
       {/* 1. Artist Hero Section */}
       <section className="relative h-screen flex flex-col justify-end pb-20 px-6 lg:px-12 overflow-hidden">
         {/* Background Image */}
@@ -64,7 +66,6 @@ const ArtistProfile = () => {
           ))}
         </div>
 
-        {/* Navigation Dots for slider feel */}
         <div className="flex justify-end space-x-4 mt-16">
           <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs opacity-40 hover:opacity-100 cursor-pointer">&larr;</div>
           <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs opacity-40 hover:opacity-100 cursor-pointer">&rarr;</div>
@@ -78,12 +79,10 @@ const ArtistProfile = () => {
         </div>
         
         <div className="relative flex items-center justify-center space-x-8 overflow-hidden">
-          {/* Side Peek Left */}
           <div className="w-1/4 aspect-video bg-neutral-900 opacity-20 transform -translate-x-12 shrink-0">
             <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover grayscale" />
           </div>
           
-          {/* Main Video */}
           <div className="w-3/4 md:w-2/3 aspect-video relative group shrink-0 shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1594623121614-290ceef5215f?auto=format&fit=crop&q=80&w=1200" 
@@ -94,13 +93,11 @@ const ArtistProfile = () => {
                 lithuania <span className="text-white/40">HQ</span>
               </div>
             </div>
-            {/* Play Button Overlay */}
             <div className="absolute bottom-8 left-8 w-12 h-12 bg-white rounded-full flex items-center justify-center text-black">
                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
             </div>
           </div>
           
-          {/* Side Peek Right */}
           <div className="w-1/4 aspect-video bg-neutral-900 opacity-20 transform translate-x-12 shrink-0">
              <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover grayscale" />
           </div>
@@ -117,7 +114,6 @@ const ArtistProfile = () => {
       {/* 4. Biography & Image Grid */}
       <section className="py-40 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-          {/* Bio Text */}
           <div className="space-y-12">
             <h3 className="text-4xl md:text-5xl font-black tracking-tight leading-tight">
               As Sweden continuously breeds the most lucrative talent in dance music, it is no surprise to see the young Marcus Cardello appear from the shadows.
@@ -137,7 +133,6 @@ const ArtistProfile = () => {
             </a>
           </div>
 
-          {/* Image Mosaic */}
           <div className="grid grid-cols-2 gap-4">
             <div className="row-span-2">
               <img 
