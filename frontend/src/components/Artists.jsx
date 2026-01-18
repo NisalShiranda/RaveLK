@@ -5,7 +5,7 @@ import card1 from '../assets/card1.png';
 
 
 const artists = [
-  { id: 1, name: 'ECHO DAFT', image: {card1} },
+  { id: 1, name: 'ECHO DAFT', image: card1 },
   { id: 2, name: 'SUBANDRIO', image: 'https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?auto=format&fit=crop&q=80&w=800' },
   { id: 3, name: 'ALEX CARI', image: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800' },
   { id: 4, name: 'NIGEL P', image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800' },
