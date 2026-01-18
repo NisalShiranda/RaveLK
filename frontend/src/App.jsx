@@ -6,6 +6,7 @@ import Partners from './components/Partners'
 import Artists from './components/Artists.jsx'
 import Events from './components/Events'
 import Footer from './components/Footer'
+import ArtistProfile from './components/ArtistProfile.jsx'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Stats />
         <Partners />
         <Artists />
+        <ArtistProfile />
         <Events />
       </main>
       <Footer />
