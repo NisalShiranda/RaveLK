@@ -140,21 +140,21 @@ const ArtistProfile = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="row-span-2">
               <img 
-                src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?auto=format&fit=crop&q=80&w=800" 
+                src={card1}
                 className="w-full h-full object-cover grayscale" 
                 alt="Portrait"
               />
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?auto=format&fit=crop&q=80&w=600" 
+                src={card2}
                 className="w-full aspect-square object-cover grayscale" 
                 alt="Studio"
               />
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=600" 
+                src={card3}
                 className="w-full aspect-square object-cover grayscale" 
                 alt="Live Performance"
               />
