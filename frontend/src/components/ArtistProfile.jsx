@@ -1,5 +1,9 @@
 
 import React from 'react';
+import card1 from '../assets/card1.png';
+import card2 from '../assets/card2.png';
+import card3 from '../assets/card3.png';
+import card4 from '../assets/card4.png';
 
 const ArtistProfile = () => {
   return (
@@ -47,9 +51,9 @@ const ArtistProfile = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24">
           {[
-            { title: 'Dream of us', art: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600' },
-            { title: 'Sadness', art: 'https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&q=80&w=600' },
-            { title: 'Parasite', art: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=600' },
+            { title: 'Dream of us', art: card1 },
+            { title: 'Sadness', art: card2 },
+            { title: 'Parasite', art: card3 },
           ].map((song, i) => (
             <div key={i} className="group cursor-pointer">
               <div className="aspect-square mb-8 overflow-hidden relative">
