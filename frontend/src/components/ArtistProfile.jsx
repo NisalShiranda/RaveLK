@@ -84,12 +84,12 @@ const ArtistProfile = () => {
         
         <div className="relative flex items-center justify-center space-x-8 overflow-hidden">
           <div className="w-1/4 aspect-video bg-neutral-900 opacity-20 transform -translate-x-12 shrink-0">
-            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover grayscale" />
+            <img src={card1} className="w-full h-full object-cover grayscale" />
           </div>
           
           <div className="w-3/4 md:w-2/3 aspect-video relative group shrink-0 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1594623121614-290ceef5215f?auto=format&fit=crop&q=80&w=1200" 
+              src={card2} 
               className="w-full h-full object-cover grayscale" 
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
@@ -103,7 +103,7 @@ const ArtistProfile = () => {
           </div>
           
           <div className="w-1/4 aspect-video bg-neutral-900 opacity-20 transform translate-x-12 shrink-0">
-             <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover grayscale" />
+             <img src={card3} className="w-full h-full object-cover grayscale" />
           </div>
         </div>
 
