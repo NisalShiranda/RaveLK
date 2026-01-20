@@ -1,3 +1,4 @@
+
 import React from 'react';
 import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png';
@@ -5,18 +6,18 @@ import card3 from '../assets/card3.png';
 import card4 from '../assets/card4.png';
 
 const artists = [
-  { id: 1, name: 'ECHO DAFT', image: card1 },
-  { id: 2, name: 'NOIYSE', image: card2 },
-  { id: 3, name: 'DIMUTH K', image: card3 },
-  { id: 4, name: 'KYOTTO', image: card4 },
+  { id: 1, name: 'ECHO DAFT', image: card1, genre: 'DEEP PROGRESSIVE' },
+  { id: 2, name: 'NOIYSE', image: card2, genre: 'MELODIC TECHNO' },
+  { id: 3, name: 'DIMUTH K', image: card3, genre: 'PROGRESSIVE HOUSE' },
+  { id: 4, name: 'KYOTTO', image: card4, genre: 'DEEP HOUSE' },
 ];
 
 const Artists = () => {
   return (
-    <section className="py-32 max-w-7xl mx-auto px-6">
+    <section id="artists-section" className="py-32 max-w-7xl mx-auto px-6 scroll-mt-24">
       <div className="flex justify-between items-end mb-16">
         <h2 className="text-4xl font-black">Our Artists</h2>
-        <a href="#" className="text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors">View All Artists &rarr;</a>
+        <a href="#artists-section" className="text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors">View All Artists &rarr;</a>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -34,7 +35,7 @@ const Artists = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-6 left-6">
               <h3 className="text-xl font-black tracking-tighter text-white uppercase">{artist.name}</h3>
-              <p className="text-[10px] text-white/50 tracking-[0.2em] mt-1 italic uppercase">DEEP PROGRESSIVE</p>
+              <p className="text-[10px] text-white/50 tracking-[0.2em] mt-1 italic uppercase">{artist.genre}</p>
             </div>
             
             <div className="absolute top-6 right-6 translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all">
