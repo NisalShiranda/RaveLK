@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-bold mb-8 uppercase tracking-widest">Contact</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              <li><a href="#">hello@ravelk.com</a></li>
-              <li><a href="#">demos@ravelk.com</a></li>
-              <li><a href="#">bookings@ravelk.com</a></li>
-              <li><a href="#">press@ravelk.com</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">hello@ravelk.com</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">demos@ravelk.com</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">bookings@ravelk.com</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">press@ravelk.com</a></li>
             </ul>
           </div>
         </div>
