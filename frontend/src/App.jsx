@@ -32,6 +32,12 @@ import DimuthS2 from './assets/DimuthS2.jpg';
 import DimuthS3 from './assets/DimuthS3.jpg';
 import DimuthImg1 from './assets/DimuthImg1.jpg';
 import DimuthImg2 from './assets/DimuthImg2.jpg';
+import KyottoCover from './assets/KyottoCover.jpg';
+import KyottoS1 from './assets/KyottoS1.jpg';
+import KyottoS2 from './assets/KyottoS2.jpg';
+import KyottoS3 from './assets/KyottoS3.jpg';
+import KyottoImg1 from './assets/KyottoImg1.jpg';
+import KyottoImg2 from './assets/KyottoImg2.jpg';
 
 const ARTISTS_DATA = [
   { 
@@ -76,15 +82,15 @@ const ARTISTS_DATA = [
   { 
     id: 4, 
     name: 'KYOTTO', 
-    image: card4,
+    image: KyottoCover,
     genre: 'DEEP HOUSE',
     bio: 'Kyotto brings a fresh and soulful perspective to the underground scene, with a focus on rhythm and groove that keeps the dance floor moving.',
     popularSongs: [
-      { title: 'Afterlife', art: card4 },
-      { title: 'Modern Soul', art: card2 },
-      { title: 'Kyoto nights', art: card3 },
+      { title: 'Afterlife', art: KyottoS1 },
+      { title: 'Modern Soul', art: KyottoS2 },
+      { title: 'Kyoto nights', art: KyottoS3 },
     ],
-    gallery: [card3, card2]
+    gallery: [KyottoImg1, KyottoImg2]
   },
 ];
 
