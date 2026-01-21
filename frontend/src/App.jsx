@@ -16,6 +16,10 @@ import card3 from './assets/card3.png';
 import card4 from './assets/card4.png';
 import echoCover from './assets/EchoCover.jpg';
 import echoS1 from './assets/EchoS1.jpg';
+import echoS2 from './assets/EchoS2.jpg';
+import echoS3 from './assets/EchoS3.png';
+import echoimg1 from './assets/EchoImg1.jpg';
+import echoimg2 from './assets/EchoImg3.jpg';
 
 const ARTISTS_DATA = [
   { 
@@ -26,10 +30,10 @@ const ARTISTS_DATA = [
     bio: 'Echo Daft is a pioneer in the Sri Lankan Progressive House scene, known for his atmospheric soundscapes and deep rhythmic structures that define the underground.',
     popularSongs: [
       { title: 'Stellar Wind', art: echoS1 },
-      { title: 'Morning Dew', art: card2 },
-      { title: 'Aurora', art: card3 },
+      { title: 'Morning Dew', art: echoS2 },
+      { title: 'Aurora', art: echoS3 },
     ],
-    gallery: [card2, card3]
+    gallery: [echoimg1, echoimg2]
   },
   { 
     id: 2, 
