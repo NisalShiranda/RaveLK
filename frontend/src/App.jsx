@@ -26,6 +26,12 @@ import NoyseS2 from './assets/NoyseS2.jpg';
 import NoyseS3 from './assets/NoyseS3.jpg';
 import NoyseImg1 from './assets/NoyseImg1.jpg';
 import NoyseImg2 from './assets/NoyseImg2.jpg';
+import DimuthCover from './assets/DimuthCover.jpg';
+import DimuthS1 from './assets/DimuthS1.jpg';
+import DimuthS2 from './assets/DimuthS2.jpg';
+import DimuthS3 from './assets/DimuthS3.jpg';
+import DimuthImg1 from './assets/DimuthImg1.jpg';
+import DimuthImg2 from './assets/DimuthImg2.jpg';
 
 const ARTISTS_DATA = [
   { 
@@ -57,15 +63,15 @@ const ARTISTS_DATA = [
   { 
     id: 3, 
     name: 'DIMUTH K', 
-    image: card3,
+    image: DimuthCover,
     genre: 'PROGRESSIVE HOUSE',
     bio: 'Dimuth K is a staple in the progressive world, delivering deep and meaningful sets that have resonated across global dance floors from London to Tokyo.',
     popularSongs: [
-      { title: 'Souls of Colombo', art: card3 },
-      { title: 'Inner Bloom', art: card1 },
-      { title: 'Drifting', art: card2 },
+      { title: 'Souls of Colombo', art: DimuthS1 },
+      { title: 'Inner Bloom', art: DimuthS2 },
+      { title: 'Drifting', art: DimuthS3 },
     ],
-    gallery: [card4, card1]
+    gallery: [DimuthImg1, DimuthImg2]
   },
   { 
     id: 4, 
