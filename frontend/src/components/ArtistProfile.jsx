@@ -1,24 +1,13 @@
-import React from 'react';
 
-/**
- * @typedef {Object} ArtistProfileProps
- * @property {Object} artist
- * @property {number} artist.id
- * @property {string} artist.name
- * @property {string} artist.image
- * @property {string} artist.genre
- * @property {string} artist.bio
- * @property {Array<{title: string, art: string}>} artist.popularSongs
- */
+import React from 'react';
 
 const ArtistProfile = ({ artist }) => {
   if (!artist) return null;
 
   return (
-    <div id="artist-profile" className="bg-black text-white font-['Inter'] scroll-mt-20">
+    <div id="artist-profile" className="bg-black text-white scroll-mt-20 font-sans">
       {/* 1. Artist Hero Section */}
       <section className="relative h-screen flex flex-col justify-end pb-20 px-6 lg:px-12 overflow-hidden">
-        {/* Dynamic Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src={artist.image} 
@@ -40,7 +29,7 @@ const ArtistProfile = ({ artist }) => {
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
             <div className="max-w-md">
-               <p className="text-xs text-white/40 uppercase tracking-[0.2em] leading-relaxed">
+               <p className="text-xs text-white/40 uppercase tracking-[0.2em] leading-relaxed font-light">
                 Representing the futuristic soundscapes of {artist.genre} within the Sri Lankan Underground community.
               </p>
             </div>
@@ -95,7 +84,7 @@ const ArtistProfile = ({ artist }) => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
             <div className="space-y-12">
-              <div className="inline-block px-4 py-1 border border-white/10 text-[9px] uppercase tracking-[0.4em] text-white/40">Biography</div>
+              <div className="inline-block px-4 py-1 border border-white/10 text-[9px] uppercase tracking-[0.4em] text-white/40 font-bold">Biography</div>
               <h3 className="text-3xl md:text-5xl font-black tracking-tighter leading-tight uppercase">
                 {artist.bio}
               </h3>
@@ -113,7 +102,7 @@ const ArtistProfile = ({ artist }) => {
                 <button className="bg-white text-black px-12 py-4 text-[10px] font-black uppercase tracking-[0.4em] hover:bg-neutral-200 transition-all active:scale-95">
                   Book Artist
                 </button>
-                <a href="#" className="text-[9px] uppercase tracking-[0.4em] text-white/40 hover:text-white transition-colors">Press Kit &rarr;</a>
+                <a href="#" className="text-[9px] uppercase tracking-[0.4em] text-white/40 hover:text-white transition-colors font-bold">Press Kit &rarr;</a>
               </div>
             </div>
 
@@ -127,16 +116,16 @@ const ArtistProfile = ({ artist }) => {
               </div>
               <div className="aspect-square overflow-hidden border border-white/5">
                 <img 
-                  src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?auto=format&fit=crop&q=80&w=600" 
+                  src={artist.gallery[0] || artist.image} 
                   className="w-full h-full object-cover grayscale opacity-50 hover:opacity-100 transition-all duration-700" 
-                  alt="Studio Gear" 
+                  alt="Gallery 1" 
                 />
               </div>
               <div className="aspect-square overflow-hidden border border-white/5">
                 <img 
-                  src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=600" 
+                  src={artist.gallery[1] || artist.image} 
                   className="w-full h-full object-cover grayscale opacity-50 hover:opacity-100 transition-all duration-700" 
-                  alt="Live Concert Environment" 
+                  alt="Gallery 2" 
                 />
               </div>
             </div>

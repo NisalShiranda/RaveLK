@@ -9,26 +9,25 @@ import ArtistProfile from './components/ArtistProfile';
 import Events from './components/Events';
 import Footer from './components/Footer';
 
-// Importing local assets
+// Local assets import
 import card1 from './assets/card1.png';
 import card2 from './assets/card2.png';
 import card3 from './assets/card3.png';
 import card4 from './assets/card4.png';
-import echoCover from './assets/echocover.png';
 
-// එක් එක් artist හට අදාළ වෙනස්ම වූ දත්ත (Dynamic Data)
 const ARTISTS_DATA = [
   { 
     id: 1, 
     name: 'ECHO DAFT', 
-    image: echoCover, 
+    image: card1, 
     genre: 'DEEP PROGRESSIVE',
     bio: 'Echo Daft is a pioneer in the Sri Lankan Progressive House scene, known for his atmospheric soundscapes and deep rhythmic structures that define the underground.',
     popularSongs: [
-      { title: 'Stellar Wind', art: echoCover },
-      { title: 'Morning Dew', art: 'https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Aurora', art: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=600' },
-    ]
+      { title: 'Stellar Wind', art: card1 },
+      { title: 'Morning Dew', art: card2 },
+      { title: 'Aurora', art: card3 },
+    ],
+    gallery: [card2, card3]
   },
   { 
     id: 2, 
@@ -37,10 +36,11 @@ const ARTISTS_DATA = [
     genre: 'MELODIC TECHNO',
     bio: 'Noiyse has built a global reputation for blending intense melodic elements with driving techno beats, making every performance a unique journey.',
     popularSongs: [
-      { title: 'Dark Void', art: 'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Silent Echo', art: 'https://images.unsplash.com/photo-1514525253344-a812ef9ee27f?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Nocturnal', art: 'https://images.unsplash.com/photo-1429962714451-bb934ecbb4ec?auto=format&fit=crop&q=80&w=600' },
-    ]
+      { title: 'Dark Void', art: card2 },
+      { title: 'Silent Echo', art: card4 },
+      { title: 'Nocturnal', art: card1 },
+    ],
+    gallery: [card1, card4]
   },
   { 
     id: 3, 
@@ -49,10 +49,11 @@ const ARTISTS_DATA = [
     genre: 'PROGRESSIVE HOUSE',
     bio: 'Dimuth K is a staple in the progressive world, delivering deep and meaningful sets that have resonated across global dance floors from London to Tokyo.',
     popularSongs: [
-      { title: 'Souls of Colombo', art: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Inner Bloom', art: 'https://images.unsplash.com/photo-1514525253344-a812ef9ee27f?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Drifting', art: 'https://images.unsplash.com/photo-1429962714451-bb934ecbb4ec?auto=format&fit=crop&q=80&w=600' },
-    ]
+      { title: 'Souls of Colombo', art: card3 },
+      { title: 'Inner Bloom', art: card1 },
+      { title: 'Drifting', art: card2 },
+    ],
+    gallery: [card4, card1]
   },
   { 
     id: 4, 
@@ -61,10 +62,11 @@ const ARTISTS_DATA = [
     genre: 'DEEP HOUSE',
     bio: 'Kyotto brings a fresh and soulful perspective to the underground scene, with a focus on rhythm and groove that keeps the dance floor moving.',
     popularSongs: [
-      { title: 'Afterlife', art: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Modern Soul', art: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600' },
-      { title: 'Kyoto nights', art: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=600' },
-    ]
+      { title: 'Afterlife', art: card4 },
+      { title: 'Modern Soul', art: card2 },
+      { title: 'Kyoto nights', art: card3 },
+    ],
+    gallery: [card3, card2]
   },
 ];
 
@@ -76,7 +78,6 @@ const App = () => {
     const handleHashChange = () => {
       const hash = window.location.hash;
       
-      // මෙතැනදී URL එකේ ඇති ID එක (#artist/1 වැනි) පරීක්ෂා කරයි
       if (hash.startsWith('#artist/')) {
         const id = parseInt(hash.split('/')[1]);
         const artist = ARTISTS_DATA.find(a => a.id === id);
@@ -97,18 +98,17 @@ const App = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Artist Profile View එක නම් පෙන්විය යුතු දේ (දත්ත සහිතව)
   if (currentView === 'artist-profile' && selectedArtist) {
     return (
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen bg-black text-white font-sans">
         <ArtistProfile artist={selectedArtist} />
-        <div className="p-10 text-center">
+        <div className="py-20 text-center border-t border-white/5 bg-neutral-950/20">
             <a 
               href="/" 
               onClick={(e) => { e.preventDefault(); window.location.hash = ''; }} 
-              className="text-white/40 hover:text-white transition-colors uppercase tracking-widest text-xs border-b border-white/10 pb-2"
+              className="inline-block text-white/40 hover:text-white transition-all uppercase tracking-[0.4em] text-[10px] border-b border-white/10 pb-2 hover:border-white"
             >
-              Back to Home
+              Back to Community &rarr;
             </a>
         </div>
         <Footer />
@@ -117,7 +117,7 @@ const App = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
       <Navbar />
       <main>
         <Hero />
