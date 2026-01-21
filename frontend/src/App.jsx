@@ -14,17 +14,18 @@ import card1 from './assets/card1.png';
 import card2 from './assets/card2.png';
 import card3 from './assets/card3.png';
 import card4 from './assets/card4.png';
+import echoCover from './assets/echocover.png';
 
 // එක් එක් artist හට අදාළ වෙනස්ම වූ දත්ත (Dynamic Data)
 const ARTISTS_DATA = [
   { 
     id: 1, 
     name: 'ECHO DAFT', 
-    image: card1, 
+    image: echoCover, 
     genre: 'DEEP PROGRESSIVE',
     bio: 'Echo Daft is a pioneer in the Sri Lankan Progressive House scene, known for his atmospheric soundscapes and deep rhythmic structures that define the underground.',
     popularSongs: [
-      { title: 'Stellar Wind', art: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600' },
+      { title: 'Stellar Wind', art: echoCover },
       { title: 'Morning Dew', art: 'https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&q=80&w=600' },
       { title: 'Aurora', art: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=600' },
     ]
