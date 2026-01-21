@@ -20,6 +20,12 @@ import echoS2 from './assets/EchoS2.jpg';
 import echoS3 from './assets/EchoS3.png';
 import echoimg1 from './assets/EchoImg1.jpg';
 import echoimg2 from './assets/EchoImg3.jpg';
+import NoyseCover from './assets/NoyseCover.jpg';
+import NoyseS1 from './assets/NoyseS1.jpg';
+import NoyseS2 from './assets/NoyseS2.jpg'; 
+import NoyseS3 from './assets/NoyseS3.jpg';
+import NoyseImg1 from './assets/NoyseImg1.jpg';
+import NoyseImg2 from './assets/NoyseImg2.jpg';
 
 const ARTISTS_DATA = [
   { 
@@ -38,15 +44,15 @@ const ARTISTS_DATA = [
   { 
     id: 2, 
     name: 'NOIYSE', 
-    image: card2,
+    image: NoyseCover,
     genre: 'MELODIC TECHNO',
     bio: 'Noiyse has built a global reputation for blending intense melodic elements with driving techno beats, making every performance a unique journey.',
     popularSongs: [
-      { title: 'Dark Void', art: card2 },
-      { title: 'Silent Echo', art: card4 },
-      { title: 'Nocturnal', art: card1 },
+      { title: 'Dark Void', art: NoyseS1 },
+      { title: 'Silent Echo', art: NoyseS2 },
+      { title: 'Nocturnal', art: NoyseS3 },
     ],
-    gallery: [card1, card4]
+    gallery: [NoyseImg1, NoyseImg2]
   },
   { 
     id: 3, 
