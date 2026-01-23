@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Partners from './components/Partners';
 import About from './components/About';
+import Releases from './components/Releases';
 import Artists from './components/Artists';
 import ArtistProfile from './components/ArtistProfile';
 import Events from './components/Events';
@@ -91,6 +92,9 @@ const App = () => {
       } else if (hash === '#about') {
         setCurrentView('about');
         window.scrollTo(0, 0);
+      } else if (hash === '#releases') {
+        setCurrentView('releases');
+        window.scrollTo(0, 0);
       } else {
         setCurrentView('home');
         setSelectedArtist(null);
@@ -126,8 +130,21 @@ const App = () => {
     return (
       <div className="min-h-screen bg-black text-white font-sans">
         <Navbar />
-        <div className="pt-20"> {/* Navbar Offset */}
+        <div className="pt-20">
           <About />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  // View: Releases (Standalone)
+  if (currentView === 'releases') {
+    return (
+      <div className="min-h-screen bg-black text-white font-sans">
+        <Navbar />
+        <div className="pt-20">
+          <Releases />
         </div>
         <Footer />
       </div>
