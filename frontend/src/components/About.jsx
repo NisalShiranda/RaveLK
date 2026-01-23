@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about-section" className="py-32 bg-black border-t border-white/5 scroll-mt-20">
+    <section className="py-32 bg-black scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Label */}
         <div className="flex items-center space-x-4 mb-12">

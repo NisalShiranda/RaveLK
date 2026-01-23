@@ -88,6 +88,9 @@ const App = () => {
           setCurrentView('artist-profile');
           window.scrollTo(0, 0);
         }
+      } else if (hash === '#about') {
+        setCurrentView('about');
+        window.scrollTo(0, 0);
       } else {
         setCurrentView('home');
         setSelectedArtist(null);
@@ -99,6 +102,7 @@ const App = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // View: Artist Profile
   if (currentView === 'artist-profile' && selectedArtist) {
     return (
       <div className="min-h-screen bg-black text-white font-sans">
@@ -117,6 +121,20 @@ const App = () => {
     );
   }
 
+  // View: About Us (Standalone)
+  if (currentView === 'about') {
+    return (
+      <div className="min-h-screen bg-black text-white font-sans">
+        <Navbar />
+        <div className="pt-20"> {/* Navbar Offset */}
+          <About />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  // View: Home
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
       <Navbar />
@@ -124,7 +142,6 @@ const App = () => {
         <Hero />
         <Stats />
         <Partners />
-        <About />
         <Artists />
         <Events />
       </main>

@@ -28,7 +28,14 @@ const Navbar = () => {
           </a>
           <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">RELEASES</a>
           <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">EVENTS</a>
-          <a href="#about-section" className="hover:text-white transition-colors uppercase tracking-widest">ABOUT</a>
+          <a 
+            href="#about" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors uppercase tracking-widest"
+          >
+            ABOUT
+          </a>
         </div>
 
         <button className="bg-white text-black px-6 py-2 rounded-full text-xs font-bold hover:bg-neutral-200 transition-colors uppercase tracking-widest">
