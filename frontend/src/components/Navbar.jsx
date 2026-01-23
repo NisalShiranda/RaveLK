@@ -26,7 +26,14 @@ const Navbar = () => {
           >
             ARTISTS
           </a>
-          <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">RELEASES</a>
+          <a 
+            href="#releases" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors uppercase tracking-widest"
+          >
+            RELEASES
+          </a>
           <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">EVENTS</a>
           <a 
             href="#about" 
