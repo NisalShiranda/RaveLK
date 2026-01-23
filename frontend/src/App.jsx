@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Partners from './components/Partners';
+import About from './components/About';
 import Artists from './components/Artists';
 import ArtistProfile from './components/ArtistProfile';
 import Events from './components/Events';
@@ -14,83 +15,59 @@ import card1 from './assets/card1.png';
 import card2 from './assets/card2.png';
 import card3 from './assets/card3.png';
 import card4 from './assets/card4.png';
-import echoCover from './assets/EchoCover.jpg';
-import echoS1 from './assets/EchoS1.jpg';
-import echoS2 from './assets/EchoS2.jpg';
-import echoS3 from './assets/EchoS3.png';
-import echoimg1 from './assets/EchoImg1.jpg';
-import echoimg2 from './assets/EchoImg3.jpg';
-import NoyseCover from './assets/NoyseCover.jpg';
-import NoyseS1 from './assets/NoyseS1.jpg';
-import NoyseS2 from './assets/NoyseS2.jpg'; 
-import NoyseS3 from './assets/NoyseS3.jpg';
-import NoyseImg1 from './assets/NoyseImg1.jpg';
-import NoyseImg2 from './assets/NoyseImg2.jpg';
-import DimuthCover from './assets/DimuthCover.jpg';
-import DimuthS1 from './assets/DimuthS1.jpg';
-import DimuthS2 from './assets/DimuthS2.jpg';
-import DimuthS3 from './assets/DimuthS3.jpg';
-import DimuthImg1 from './assets/DimuthImg1.jpg';
-import DimuthImg2 from './assets/DimuthImg2.jpg';
-import KyottoCover from './assets/KyottoCover.jpg';
-import KyottoS1 from './assets/KyottoS1.jpg';
-import KyottoS2 from './assets/KyottoS2.jpg';
-import KyottoS3 from './assets/KyottoS3.jpg';
-import KyottoImg1 from './assets/KyottoImg1.jpg';
-import KyottoImg2 from './assets/KyottoImg2.jpg';
 
 const ARTISTS_DATA = [
   { 
     id: 1, 
     name: 'ECHO DAFT', 
-    image: echoCover, 
+    image: card1, 
     genre: 'DEEP PROGRESSIVE',
     bio: 'Echo Daft is a pioneer in the Sri Lankan Progressive House scene, known for his atmospheric soundscapes and deep rhythmic structures that define the underground.',
     popularSongs: [
-      { title: 'Stellar Wind', art: echoS1 },
-      { title: 'Morning Dew', art: echoS2 },
-      { title: 'Aurora', art: echoS3 },
+      { title: 'Stellar Wind', art: card1 },
+      { title: 'Morning Dew', art: card2 },
+      { title: 'Aurora', art: card3 },
     ],
-    gallery: [echoimg1, echoimg2]
+    gallery: [card2, card3]
   },
   { 
     id: 2, 
     name: 'NOIYSE', 
-    image: NoyseCover,
+    image: card2,
     genre: 'MELODIC TECHNO',
     bio: 'Noiyse has built a global reputation for blending intense melodic elements with driving techno beats, making every performance a unique journey.',
     popularSongs: [
-      { title: 'Dark Void', art: NoyseS1 },
-      { title: 'Silent Echo', art: NoyseS2 },
-      { title: 'Nocturnal', art: NoyseS3 },
+      { title: 'Dark Void', art: card2 },
+      { title: 'Silent Echo', art: card4 },
+      { title: 'Nocturnal', art: card1 },
     ],
-    gallery: [NoyseImg1, NoyseImg2]
+    gallery: [card1, card4]
   },
   { 
     id: 3, 
     name: 'DIMUTH K', 
-    image: DimuthCover,
+    image: card3,
     genre: 'PROGRESSIVE HOUSE',
     bio: 'Dimuth K is a staple in the progressive world, delivering deep and meaningful sets that have resonated across global dance floors from London to Tokyo.',
     popularSongs: [
-      { title: 'Souls of Colombo', art: DimuthS1 },
-      { title: 'Inner Bloom', art: DimuthS2 },
-      { title: 'Drifting', art: DimuthS3 },
+      { title: 'Souls of Colombo', art: card3 },
+      { title: 'Inner Bloom', art: card1 },
+      { title: 'Drifting', art: card2 },
     ],
-    gallery: [DimuthImg1, DimuthImg2]
+    gallery: [card4, card1]
   },
   { 
     id: 4, 
     name: 'KYOTTO', 
-    image: KyottoCover,
+    image: card4,
     genre: 'DEEP HOUSE',
     bio: 'Kyotto brings a fresh and soulful perspective to the underground scene, with a focus on rhythm and groove that keeps the dance floor moving.',
     popularSongs: [
-      { title: 'Afterlife', art: KyottoS1 },
-      { title: 'Modern Soul', art: KyottoS2 },
-      { title: 'Kyoto nights', art: KyottoS3 },
+      { title: 'Afterlife', art: card4 },
+      { title: 'Modern Soul', art: card2 },
+      { title: 'Kyoto nights', art: card3 },
     ],
-    gallery: [KyottoImg1, KyottoImg2]
+    gallery: [card3, card2]
   },
 ];
 
@@ -147,6 +124,7 @@ const App = () => {
         <Hero />
         <Stats />
         <Partners />
+        <About />
         <Artists />
         <Events />
       </main>
