@@ -18,7 +18,7 @@ const EVENTS_DATA = [
     date: 'DEC 28', 
     time: '16:00 - 02:00',
     location: 'MIRISSA BEACH', 
-    image: 'https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1733636017715-f0cce733b8a0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: '$40.00',
     status: 'EARLY BIRD SOLD OUT'
   },
@@ -28,7 +28,7 @@ const EVENTS_DATA = [
     date: 'JAN 05', 
     time: '23:00 - 05:00',
     location: 'LEVEL 4, COLOMBO', 
-    image: 'https://images.unsplash.com/photo-1514525253344-a812ef9ee27f?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1698153782147-07bb858d5232?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: '$15.00',
     status: 'TICKETS AVAILABLE'
   },
@@ -38,7 +38,7 @@ const EVENTS_DATA = [
     date: 'JAN 20', 
     time: '21:00 - LATE',
     location: 'WAREHOUSE 02', 
-    image: 'https://images.unsplash.com/photo-1429962714451-bb934ecbb4ec?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1667398287003-c9ae617abf89?q=80&w=1225&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: '$30.00',
     status: 'COMING SOON'
   },
