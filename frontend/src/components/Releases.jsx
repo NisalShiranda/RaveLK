@@ -1,11 +1,13 @@
 
 import React from 'react';
+import Dimuth from '../assets/DimuthS1.jpg';
+import Kyotto from '../assets/KyottoS1.jpg';
 
 const RELEASES_DATA = [
   { id: 'SLU001', title: 'Stellar Wind', artist: 'Echo Daft', art: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=600', date: 'OCT 2024' },
   { id: 'SLU002', title: 'Dark Void', artist: 'Noiyse', art: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=600', date: 'SEP 2024' },
-  { id: 'SLU003', title: 'Souls of Colombo', artist: 'Dimuth K', art: 'https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80&w=600', date: 'AUG 2024' },
-  { id: 'SLU004', title: 'Afterlife', artist: 'Kyotto', art: 'https://images.unsplash.com/photo-1514525253344-a812ef9ee27f?auto=format&fit=crop&q=80&w=600', date: 'JUL 2024' },
+  { id: 'SLU003', title: 'Souls of Colombo', artist: 'Dimuth K', art: Dimuth, date: 'AUG 2024' },
+  { id: 'SLU004', title: 'Afterlife', artist: 'Kyotto', art: Kyotto, date: 'JUL 2024' },
   { id: 'SLU005', title: 'Morning Dew', artist: 'Echo Daft', art: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600', date: 'JUN 2024' },
   { id: 'SLU006', title: 'Nocturnal', artist: 'Noiyse', art: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&q=80&w=600', date: 'MAY 2024' },
 ];
