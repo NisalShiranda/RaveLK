@@ -7,6 +7,7 @@ import Partners from './components/Partners';
 import About from './components/About';
 import Releases from './components/Releases';
 import EventsPage from './components/EventsPage';
+import Community from './components/Community';
 import Artists from './components/Artists';
 import ArtistProfile from './components/ArtistProfile';
 import Events from './components/Events';
@@ -99,6 +100,9 @@ const App = () => {
       } else if (hash === '#events') {
         setCurrentView('events');
         window.scrollTo(0, 0);
+      } else if (hash === '#community') {
+        setCurrentView('community');
+        window.scrollTo(0, 0);
       } else {
         setCurrentView('home');
         setSelectedArtist(null);
@@ -162,6 +166,19 @@ const App = () => {
         <Navbar />
         <div className="pt-20">
           <EventsPage />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  // View: Community (Standalone)
+  if (currentView === 'community') {
+    return (
+      <div className="min-h-screen bg-black text-white font-sans">
+        <Navbar />
+        <div className="pt-20">
+          <Community />
         </div>
         <Footer />
       </div>

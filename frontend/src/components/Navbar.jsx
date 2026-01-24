@@ -46,9 +46,12 @@ const Navbar = () => {
           </a>
         </div>
 
-        <button className="bg-white text-black px-6 py-2 rounded-full text-xs font-bold hover:bg-neutral-200 transition-colors uppercase tracking-widest">
+        <a 
+          href="#community"
+          className="bg-white text-black px-6 py-2 rounded-full text-xs font-bold hover:bg-neutral-200 transition-colors uppercase tracking-widest inline-block text-center"
+        >
           JOIN COMMUNITY
-        </button>
+        </a>
       </div>
     </nav>
   );
