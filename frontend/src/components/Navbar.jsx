@@ -28,24 +28,18 @@ const Navbar = () => {
           </a>
           <a 
             href="#releases" 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="hover:text-white transition-colors uppercase tracking-widest"
           >
             RELEASES
           </a>
           <a 
             href="#events" 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="hover:text-white transition-colors uppercase tracking-widest"
           >
             EVENTS
           </a>
           <a 
             href="#about" 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="hover:text-white transition-colors uppercase tracking-widest"
           >
             ABOUT
