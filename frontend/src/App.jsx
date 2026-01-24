@@ -6,6 +6,7 @@ import Stats from './components/Stats';
 import Partners from './components/Partners';
 import About from './components/About';
 import Releases from './components/Releases';
+import EventsPage from './components/EventsPage';
 import Artists from './components/Artists';
 import ArtistProfile from './components/ArtistProfile';
 import Events from './components/Events';
@@ -95,6 +96,9 @@ const App = () => {
       } else if (hash === '#releases') {
         setCurrentView('releases');
         window.scrollTo(0, 0);
+      } else if (hash === '#events') {
+        setCurrentView('events');
+        window.scrollTo(0, 0);
       } else {
         setCurrentView('home');
         setSelectedArtist(null);
@@ -145,6 +149,19 @@ const App = () => {
         <Navbar />
         <div className="pt-20">
           <Releases />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  // View: Events (Standalone)
+  if (currentView === 'events') {
+    return (
+      <div className="min-h-screen bg-black text-white font-sans">
+        <Navbar />
+        <div className="pt-20">
+          <EventsPage />
         </div>
         <Footer />
       </div>

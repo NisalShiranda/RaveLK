@@ -34,7 +34,14 @@ const Navbar = () => {
           >
             RELEASES
           </a>
-          <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">EVENTS</a>
+          <a 
+            href="#events" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors uppercase tracking-widest"
+          >
+            EVENTS
+          </a>
           <a 
             href="#about" 
             target="_blank" 
